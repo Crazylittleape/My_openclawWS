@@ -145,3 +145,34 @@ Use `python3` when running workspace validation scripts.
 - **Notes**: Switched the validation command from `python` to `python3`.
 
 ---
+## [ERR-20260322-002] project_search_rg_missing
+
+**Logged**: 2026-03-22T15:23:40+08:00
+**Priority**: low
+**Status**: resolved
+**Area**: docs
+
+### Summary
+Tried to use `rg` for project search, but ripgrep is not installed in this shell.
+
+### Error
+```
+/bin/bash: line 1: rg: command not found
+```
+
+### Context
+- Command attempted: `rg -n "copy|复制|卡密|activation|redeem|clipboard|navigator\.clipboard|兑换码|激活码" ...`
+- Environment: OpenClaw workspace shell on Ubuntu
+
+### Suggested Fix
+Fall back to `grep -RIn` when `rg` is unavailable.
+
+### Metadata
+- Reproducible: yes
+- Related Files: /home/ubuntu/00_AI_agents/0_Program/0_Web_design/love-personality-mvp
+
+### Resolution
+- **Resolved**: 2026-03-22T15:23:50+08:00
+- **Notes**: Switched to `grep -RIn` for code search.
+
+---
