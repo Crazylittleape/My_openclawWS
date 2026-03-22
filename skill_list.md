@@ -1,6 +1,6 @@
 # OpenClaw Skills 清单
 
-> 自动生成于：2026-03-22 17:00:17 +0800
+> 自动生成于：2026-03-22 19:00:24 +0800
 > 总计 Skills：27 个（workspace + global 去重后）
 
 ## ~/.openclaw/workspace/skills/ （项目 Skills）
