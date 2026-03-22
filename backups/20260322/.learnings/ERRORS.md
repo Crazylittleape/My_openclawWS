@@ -114,3 +114,34 @@ web_search (brave) needs a Brave Search API key.
 - Related Files: N/A
 
 ---
+## [ERR-20260322-001] docx_validate_command
+
+**Logged**: 2026-03-22T14:31:30+08:00
+**Priority**: low
+**Status**: resolved
+**Area**: docs
+
+### Summary
+DOCX validation command failed because `python` is not available in the shell; this environment uses `python3`.
+
+### Error
+```
+/bin/bash: line 1: python: command not found
+```
+
+### Context
+- Command attempted: `python /home/ubuntu/.openclaw/skills/docx/scripts/office/validate.py /home/ubuntu/.openclaw/workspace/杨如意_外贸业务员面试自我介绍_中英文版.docx`
+- Environment: OpenClaw workspace on Ubuntu
+
+### Suggested Fix
+Use `python3` when running workspace validation scripts.
+
+### Metadata
+- Reproducible: yes
+- Related Files: /home/ubuntu/.openclaw/skills/docx/scripts/office/validate.py
+
+### Resolution
+- **Resolved**: 2026-03-22T14:31:50+08:00
+- **Notes**: Switched the validation command from `python` to `python3`.
+
+---

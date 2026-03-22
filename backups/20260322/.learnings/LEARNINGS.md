@@ -191,3 +191,30 @@
 - Tags: correction, report-writing, content-density, enneatao
 
 ---
+
+## [LRN-20260322-001] correction
+
+**Logged**: 2026-03-22T05:50:57.317395+00:00
+**Priority**: high
+**Status**: pending
+**Area**: docs
+
+### Summary
+命运模块报告不能只用三大体系做灵感背景；必须把中国命理 / 西方占星 / 人类图的具体知识骨架转成明确的判定层和报告层，否则用户会觉得泛泛之谈、看了等于没看。
+
+### Details
+用户明确指出：当前“命运课题解析”完整报告没有真正结合命理学、西方占星学和人类图知识，读感像泛泛心理文案。问题根源不是文笔，而是我把三套体系只用作主题灵感，没有把它们拆成可见的分析层（如命理层、占星层、人类图层、综合判断层、行动建议层），导致报告缺少知识密度、术语锚点、机制链条和专业感。
+
+### Suggested Action
+重构命运模块：
+1. 报告结构改为“命理映射 / 占星映射 / 人类图映射 / 综合交叉判断 / 现实动作”；
+2. 题目维度要显式对应到三体系的知识来源；
+3. 每个结果类型必须给出更具体的结构化解释，而不是纯抒情；
+4. 若没有出生信息，要明确这是“基于三体系思想转译的问卷版”，不是命盘直算版。
+
+### Metadata
+- Source: user_feedback
+- Related Files: /home/ubuntu/00_AI_agents/0_Program/0_Web_design/love-personality-mvp/prototype/data.js, /home/ubuntu/00_AI_agents/0_Program/0_Web_design/love-personality-mvp/backend/app/services/report_content_service.py
+- Tags: destiny-module, report-density, correction, metaphysics
+
+---
